@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Margen</title>
+
+</head>
+<body>
+
+    <h1>Calculadora de Margen</h1>
+    
+    <div>
+        <label for="costoBruto">Costo Bruto:</label>
+        <input type="number" id="costoBruto" placeholder="Ingresa el costo bruto">
+    </div>
+    
+    <div>
+        <label for="precioVenta">Precio de Venta:</label>
+        <input type="number" id="precioVenta" placeholder="Ingresa el precio de venta">
+    </div>
+    
+    <!-- Botón -->
+    <div>
+        <button id="calcularBtn">Calcular</button>
+    </div>
+    
+    <div>
+        <p>Costo Total: <span id="costoTotal"></span></p>
+        <ul>
+            <li>Despacho: <span id="despachoValue"></span></li>
+            <li>Comisiones(17%): <span id="comisionesValue"></span></li>
+        </ul>
+        <h2>Margen de Venta: <span id="margenVenta"></span></h2>
+        <p>Monto: <span id="margenBruto"></span></p>
+
+    </div>
+<script src="main.js"></script>
+
+</body>
+</html>
