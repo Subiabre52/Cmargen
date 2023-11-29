@@ -11,14 +11,24 @@
 <body>
 
     <h1>Calculadora de Margen</h1>
-    
+    <p>Tu localidad: <span id="localidadUsuario"></span></p>
+
     <div>
-        <label for="costoBruto">Costo Bruto:</label>
+        <h3>Plataforma</h3>
+        <select id="plataforma" name="plataforma">
+            <option value="Mercado Libre">Mercado Libre</option>
+            <option value="Mercado Shops">Mercado Shops</option>
+            <!-- <option value="Personal">Tienda</option> -->
+        </select>
+    </div>
+
+    <div>
+        <h3 for="costoBruto">Costo Bruto:</h3>
         <input type="number" id="costoBruto" placeholder="Ingresa el costo bruto">
     </div>
     
     <div>
-        <label for="precioVenta">Precio de Venta:</label>
+        <h3 for="precioVenta">Precio de Venta:</h3>
         <input type="number" id="precioVenta" placeholder="Ingresa el precio de venta">
     </div>
     
@@ -37,6 +47,7 @@
         <p>Monto: <span id="margenBruto"></span></p>
 
     </div>
+
 <script src="main.js"></script>
 
 </body>
